@@ -38,12 +38,12 @@ SIGNAL_WINDOW = 4500        # window the momentum signal reads
 # --- momentum entries ---
 MIN_AGE_SLOTS = 3000        # ignore brand-new curves
 MIN_TRADES = 12
-MIN_BUYERS = 6
+MIN_BUYERS = 5
 MIN_BUY_SOL = 3 * SOL // 2  # 1.5 SOL of buy flow in the window
-BUY_SELL_RATIO = 2.5
-MIN_PRICE_RISE = 1.12       # price up at least 12% across the window
+BUY_SELL_RATIO = 2.0
+MIN_PRICE_RISE = 1.08       # price up at least 8% across the window
 MIN_REAL_QUOTE = 5 * SOL    # curve must hold some real depth
-STAKE = 8 * SOL // 100      # 0.08 SOL per momentum position
+STAKE = 12 * SOL // 100     # 0.12 SOL per momentum position
 CASH_RESERVE = SOL          # never let free cash fall below 1 SOL
 REENTRY_COOLDOWN = 20000    # slots before a coin may be bought again
 
