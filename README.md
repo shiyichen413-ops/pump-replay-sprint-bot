@@ -10,7 +10,7 @@ A paper-trading bot for the make.fun competition **Pump.fun Replay Sprint — Pa
 
 Follow the flow, cut losers fast, and keep the house guardrail satisfied on purpose:
 
-- **Momentum entries.** A coin qualifies when buy flow is broad and rising: at least 12 trades and 6 distinct buyers in the signal window, buy volume at least 2.5× sell volume and at least 1.5 SOL in total, and the price already up at least 12% across the window. Stake is a fixed 0.08 SOL, capped by the curve's size limit.
+- **Momentum entries.** A coin qualifies when buy flow is broad and rising: at least 12 trades and 5 distinct buyers in the signal window, buy volume at least 2× sell volume and at least 1.5 SOL in total, and the price already up at least 8% across the window. Stake is a fixed 0.12 SOL, capped by the curve's size limit.
 - **Disciplined exits.** Take profit at +60%, stop loss at −30%, a trailing stop once a position is up 30%, and a time stop after about six hours.
 - **Guardrail probes.** Tiny 0.02 SOL round trips on fresh coins keep the entry above the competition's bar of 20 distinct round-tripped coins, while small stakes next to the 10 SOL capital keep drawdown shallow.
 
